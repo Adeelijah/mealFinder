@@ -72,3 +72,10 @@
  .finder .food-photo{height:240px}
  .result-copy h2{font-size:27px}
 }
+
+/* Floating glass navigation and softly elevated selector */
+header{position:sticky;top:12px;z-index:20;width:calc(100% - 40px);max-width:1160px;margin:12px auto 0;padding:16px 24px;background:rgba(246,245,239,.78);border:1px solid rgba(255,255,255,.8);border-radius:18px;-webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%);box-shadow:0 8px 28px rgba(23,63,49,.09)}
+.finder{box-shadow:0 10px 32px rgba(23,63,49,.09),0 2px 7px rgba(23,63,49,.035);border-color:rgba(23,63,49,.13)}
+#finder,#how,#faq{scroll-margin-top:100px}
+@media(max-width:760px){header{top:8px;width:calc(100% - 24px);margin-top:8px;padding:10px 14px;min-height:54px;border-radius:14px}main{padding-top:20px}.finder{box-shadow:0 8px 26px rgba(23,63,49,.09),0 2px 6px rgba(23,63,49,.035)}#finder,#how,#faq{scroll-margin-top:82px}}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){header{background:rgba(246,245,239,.97)}}
