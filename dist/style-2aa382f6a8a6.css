@@ -111,3 +111,20 @@ input[type=range]{accent-color:#315b40}
 @media(min-width:761px){.controls{padding:32px}.result>.price{padding:22px 28px 18px}.result>.cta{margin:0 28px 4px}}
 @media(max-width:760px){.finder{border-radius:20px}.controls{padding:24px 20px}.chips{gap:9px}.chips button{padding:11px 16px}.result-copy{padding:24px 20px}.result>.price{padding:20px;border-top:1px solid #e1e7dc}.result>.cta{margin:0 20px 20px}#remaining{max-width:128px;font-size:13px}}
 @media(prefers-reduced-motion:reduce){.chips button{transition:none}}
+
+/* Calm, considered FAQ accordion */
+.faq{border-top:0;padding:44px 0 58px;gap:52px;align-items:start}
+.faq>div:first-child{padding-top:16px}
+.faq .eyebrow{color:#687b6c;font-weight:600}
+.faq h2{font-size:42px;line-height:1.12;letter-spacing:-1px;margin:16px 0 0}
+.faq>div:last-child{display:grid;gap:10px}
+.faq details{background:rgba(255,255,255,.8);border:1px solid #dfe5da;border-radius:14px;padding:0;overflow:hidden;box-shadow:0 2px 8px rgba(23,63,49,.025)}
+.faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 22px;font-weight:600;font-size:16px;line-height:1.5;color:#314d3d}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";display:flex;align-items:center;justify-content:center;width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:#edf2e7;color:#315b40;font-size:22px;font-weight:400;line-height:1}
+.faq details[open]{background:#fff;border-color:#c8d5bf}
+.faq details[open] summary::after{content:"−";background:#dde8d5}
+.faq details p{font-size:16px;line-height:1.7;color:#607065;margin:0;padding:0 22px 22px}
+.faq summary:hover{background:#f5f8f0}
+.faq summary:focus-visible{outline-offset:-4px;border-radius:14px}
+@media(max-width:760px){.faq{grid-template-columns:1fr;gap:24px;padding:28px 0 40px}.faq>div:first-child{padding-top:0}.faq h2{font-size:32px;margin-top:12px}.faq h2 br{display:none}.faq>div:last-child{gap:10px}.faq summary{padding:18px;gap:12px;font-size:16px}.faq details p{padding:0 18px 20px;font-size:16px;line-height:1.65}}
