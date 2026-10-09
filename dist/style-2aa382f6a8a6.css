@@ -128,3 +128,23 @@ input[type=range]{accent-color:#315b40}
 .faq summary:hover{background:#f5f8f0}
 .faq summary:focus-visible{outline-offset:-4px;border-radius:14px}
 @media(max-width:760px){.faq{grid-template-columns:1fr;gap:24px;padding:28px 0 40px}.faq>div:first-child{padding-top:0}.faq h2{font-size:32px;margin-top:12px}.faq h2 br{display:none}.faq>div:last-child{gap:10px}.faq summary{padding:18px;gap:12px;font-size:16px}.faq details p{padding:0 18px 20px;font-size:16px;line-height:1.65}}
+
+/* Friendly food-brand typography */
+:root{font-family:"Nunito", "Trebuchet MS",Arial,sans-serif}
+h1,h2,h3,.brand,.price strong,.controls label strong{font-family:"Fredoka","Trebuchet MS",sans-serif}
+h1{font-weight:500;letter-spacing:-1.5px;line-height:1.08}
+h1 em{font-family:inherit;font-style:normal;font-weight:500;color:#4c7052}
+.brand{font-weight:500;letter-spacing:.8px}.brand b{font-weight:600}
+.eyebrow{font-family:"Nunito","Trebuchet MS",sans-serif;font-weight:800;letter-spacing:1.2px}
+.controls label,.controls legend{font-weight:800}
+.chips button{font-family:inherit;font-weight:700}
+.chips button[aria-pressed=true]{font-weight:800}
+.result-copy h2{font-family:"Fredoka","Trebuchet MS",sans-serif;font-weight:500;letter-spacing:0;line-height:1.15}
+.price strong{font-weight:500;letter-spacing:0}
+.cta{font-family:"Nunito","Trebuchet MS",sans-serif;font-weight:800!important}
+.visual-how>h2{font-weight:500;letter-spacing:0}
+.visual-how .steps h3{font-weight:500;letter-spacing:0}
+.faq h2{font-family:"Fredoka","Trebuchet MS",sans-serif;font-weight:500;letter-spacing:0}
+.faq summary{font-family:"Nunito","Trebuchet MS",sans-serif;font-weight:800}
+.faq details p{font-weight:500}
+@media(max-width:760px){.intro h1{font-size:32px;letter-spacing:-.5px}.result-copy h2{font-size:30px}.faq h2{font-size:34px}.visual-how>h2{font-size:26px}}
