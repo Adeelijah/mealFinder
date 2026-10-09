@@ -42,3 +42,33 @@
  header{padding:6px 12px}.brand>span{font-size:9px}
  .result-copy h2{font-size:23px}.finder .food-photo{height:170px}
 }
+
+/* Comfortable mobile spacing */
+@media(max-width:760px){
+ header{padding:10px 16px;min-height:54px}
+ main{padding:18px 16px 0}
+ .intro{margin-bottom:18px}.intro h1{font-size:30px}
+ .finder{border-radius:16px}
+ .finder .food-photo{height:clamp(240px,35svh,320px)}
+ .result-copy{padding:22px 20px}.result-copy h2{font-size:30px;line-height:1.15}
+ .result-copy .eyebrow{margin-bottom:10px}.drink-pairing{margin-top:8px}
+ .controls{padding:22px 18px 20px}
+ .controls label{margin-bottom:8px;font-size:16px}
+ .controls label strong{font-size:21px}
+ input[type=range]{height:32px}
+ fieldset{margin-top:20px}
+ legend{font-size:16px;margin-bottom:9px}
+ .chips{gap:8px;padding:3px 3px 6px}
+ .chips button{padding:11px 16px;min-height:46px}
+ label[for=drink]{margin-top:20px}
+ select{min-height:48px;padding:12px}
+ .result>.price{padding:20px 18px 14px;border-top:1px solid #d4dccf}
+ .price div{gap:6px}.price strong{font-size:30px}
+ .result>.cta{margin:0 18px 18px;padding:16px;border-radius:9px;min-height:50px}
+ .how{padding:42px 0}
+}
+@media(max-width:360px){
+ main{padding-left:12px;padding-right:12px}
+ .finder .food-photo{height:240px}
+ .result-copy h2{font-size:27px}
+}
