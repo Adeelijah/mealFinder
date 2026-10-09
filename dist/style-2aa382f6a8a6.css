@@ -148,3 +148,10 @@ h1 em{font-family:inherit;font-style:normal;font-weight:500;color:#4c7052}
 .faq summary{font-family:"Nunito","Trebuchet MS",sans-serif;font-weight:800}
 .faq details p{font-weight:500}
 @media(max-width:760px){.intro h1{font-size:32px;letter-spacing:-.5px}.result-copy h2{font-size:30px}.faq h2{font-size:34px}.visual-how>h2{font-size:26px}}
+
+.photo-status{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:80px 20px 20px;gap:12px;pointer-events:none;color:#fff;z-index:1}
+.photo-status[hidden]{display:none}.photo-status p{font-size:16px;font-weight:700;margin:0;text-align:center}
+.photo-spinner{width:30px;height:30px;border:3px solid #ffffff40;border-top-color:#e5edbd;border-radius:50%;animation:photo-spin .8s linear infinite}
+@keyframes photo-spin{to{transform:rotate(360deg)}}
+@media(max-width:760px){.photo-status{padding-top:35px}.photo-status p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.photo-spinner{animation:none}}
